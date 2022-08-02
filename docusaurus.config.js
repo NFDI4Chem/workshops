@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Minimum Information Requirements',
   tagline: 'NFDI4Chem Workshop Series' ,
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/NFDI4Chem/workshops',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,9 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'NFDI4Chem', // Usually your GitHub org/user name.
+  projectName: 'workshops', // Usually your repo name.
+  deploymentBranch: 'main'
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
