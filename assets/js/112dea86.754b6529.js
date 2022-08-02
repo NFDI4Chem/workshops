@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkworkshops=self.webpackChunkworkshops||[]).push([[237],{8066:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/workshops/blog/tags/hola","allTagsPath":"/workshops/blog/tags","count":1}')}}]);
