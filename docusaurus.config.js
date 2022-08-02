@@ -9,7 +9,7 @@ const config = {
   title: 'Minimum Information Requirements',
   tagline: 'NFDI4Chem Workshop Series' ,
   url: 'https://github.com/NFDI4Chem/workshops',
-  baseUrl: '/',
+  baseUrl: '/workshops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
