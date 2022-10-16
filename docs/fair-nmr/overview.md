@@ -10,7 +10,7 @@ Karlsruhe: 07.06.2022 - 08.06.2022
 ## Participants (Alphabetically)
 
 [Dr. Damien Jeannerat](https://orcid.org/0000-0001-7018-4288), Dr. Gerhard Fink,
-[Prof. Henry Rzepa](https://orcid.org/0000-0002-8635-8390), [Dr. Ian Bruno](https://orcid.org/0000-0003-4901-9936), [Dr. Johannes Liermann](https://orcid.org/0000-0003-2060-842X), [Mr. Mark Archibald](https://orcid.org/0000-0001-8687-7134), [Dr. Nicole Jung](https://orcid.org/0000-0001-9513-2468), Ms. Nisha Sharma, Ms. Noura Rayya, [Prof. Robert Hanson](https://orcid.org/0000-0001-5411-2356), Dr. Stefan Kuhn, [Prof. Steffen Neumann](https://orcid.org/0000-0002-7899-7192), [Mr. Venkata Chandra Sekhar Nainala](https://orcid.org/0000-0002-2564-3243)
+[Prof. Henry Rzepa](https://orcid.org/0000-0002-8635-8390), [Dr. Ian Bruno](https://orcid.org/0000-0003-4901-9936), [Dr. Johannes Liermann](https://orcid.org/0000-0003-2060-842X), [Mr. Mark Archibald](https://orcid.org/0000-0001-8687-7134), [Dr. Nicole Jung](https://orcid.org/0000-0001-9513-2468), Ms. Nisha Sharma, Ms. Noura Rayya, [Prof. Robert Hanson](https://orcid.org/0000-0001-5411-2356), Dr. Stefan Kuhn, [Dr. Steffen Neumann](https://orcid.org/0000-0002-7899-7192), [Mr. Venkata Chandra Sekhar Nainala](https://orcid.org/0000-0002-2564-3243)
 
 ## Repositories
 ### [nmrXiv](https://dev.nmrxiv.org/)
