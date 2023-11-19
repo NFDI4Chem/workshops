@@ -65,9 +65,15 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'workshops/intro',
             position: 'left',
             label: 'Workshops',
+          },
+          {
+            type: 'doc',
+            docId: 'michi/intro',
+            position: 'left',
+            label: 'MIChI',
           },
           {
             href: 'https://github.com/NFDI4Chem/workshops',

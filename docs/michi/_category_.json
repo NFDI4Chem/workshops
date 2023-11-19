@@ -1,0 +1,8 @@
+{
+  "label": "MIChI",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Here you can find all the MIChI that are still in the draft phase along with published ones."
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "label": "Recommendation Standard for Reporting Liquid-State NMR Experiments of Small Molecules",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "This recommendation standard is a proposal from NFDI4Chem to outline essential metadata required for documenting liquid-state NMR experiments of small molecules. We aim to make it suitable for NMR repositories and the supplementary materials of publications.The standard consists of textual guidelines explaining the meaning and purpose of the more concise tabular recommendations. Both can be found below."
+    }
+  }
+  
+
+

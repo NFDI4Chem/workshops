@@ -9,4 +9,4 @@ NFDI4Chem is facilitating and organising a series of international workshops in 
 
 ## Content
 
-For each workshop, we provide an overview about the topics discussed with a link to the full workshop record, along with forms to hear from you about your comments and thoughts, and other related links.+
+For each workshop, we provide an overview about the topics discussed with a link to the full workshop record, along with forms to hear from you about your comments and thoughts, and other related links.
