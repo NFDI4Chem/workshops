@@ -20,3 +20,28 @@ The recommendations started with metadata for reporting NMR analyses of syntheti
 
 [Here is the link to the recommendations draft](https://docs.google.com/document/d/1fPltMeYXRmpCnzSOznekDpavrbIqzrpMyd8plNnrYcU/edit), which will be open for editing until publication.
 
+##  Scientific applications development - NMRium
+
+Here we show Zakodium approach for the development of NMRium and how to make programming fair. Central to their methodology is the creation of highly sought-after libraries, such as React components including parsers, jcamp or Bruker converters, and tools for generating jcamp from other data.Zakodium adopts the practice of conventional committing to facilitate the automated generation of the change log based on bug fixes and new features, seamlessly closing associated issues. They harness continuous integration and leverage automatic GitHub testing. "Coverage" tells how much of the code was tested and which lines weren't, usually over 80% of the code is tested. 
+
+To ensure the visibility and accessibility of their projects, Zakodium utilizes the Zenodo platform for publication, thereby obtaining Digital Object Identifiers (DOIs). Furthermore, they incorporate a "CITATION.cff" file, streamlining the generation of project citations in various formats, such as plain text or BibTeX. 
+
+### Building React Application:
+
+In the construction of React Applicationa, Zakodium employs a modular approach, relying on a multitude of specialized libraries for the graphical user interface (GUI), React components, and other functionalities. Impressively, over 60 libraries managed by Zakodium are integrated into NMRium, each serving specific purposes such as converters, structure viewing, and data loading and saving. A notable example is the 'nmr-load-save' library, capable of extracting comprehensive metadata from raw files within NMRium. Another case in point is 'Pixelium,' a library primarily focused on image processing. While not directly related to NMR, Pixelium extensively utilizes libraries originally created for NMRium, showcasing the versatility and cross-applicability of their development efforts. The team employs GitHub projects feature, providing a comprehensive overview of ongoing work and enabling the archiving of completed tasks. Automation is key in their workflow, with automatic bug reporting integrated into NMRium to promptly flag and address issues as they arise.
+
+### New NMRium Features
+NMRium introduces a range of new features that enhance its capabilities:
+
+- **Multiplet analysis**: Conduct multiplet analysis directly within the browser without the need for downloads, where you can display multiplicity trees, show the structure and do the assignment.The relation between the tables, molecule and spectra is interactive.
+- **Databases**: NMRium incorporates a versatile database featur to have databases for solvent or references for instance. Users can perform searches based on structure, substructure, or shifts. Additionally, there is advanced search to look for specific atoms.
+Simulation:
+- **Prediction**: Offering both 1D and 2D prediction capabilities, NMRium predicts spectra based on user-provided structures. It is also interactive. 
+- **Simulation**: A novel addition, the simulation feature enables spectrum generation by entering values directly into the table, which is particularly beneficial for educational purposes
+- **Metabolomics**: NMRium excels in handling substantial gigabyte-sized files even within the browser. Filtering options enable users to navigate and extract relevant information from large amount of files based on specific criteria such as the type.
+- **e-learning**: You process the spectrum and and propose a structure and you find if correct or not.
+
+### Formats Discussion 
+
+In our considerations of data formats, it's crucial to draw a distinction between archival formats and those tailored for processing. A case in point is mzML, which, despite its stability over time, has faced reservations among users for certain applications. In Massbank, there exists a diversity of formats, including the less-documented Bruker MS, in contrast to the well-documented Bruker NMR.
+In the context of NMRium, an approach encapsulating both original and processed data within a single JSON file is adopted. Notably, the utilization of JSON holds the promise of longevity, as its readability is anticipated to endure over the next 30 years. Audit trails are needed and we need to be able to read the data in 30 years from now.
