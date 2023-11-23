@@ -45,3 +45,51 @@ Simulation:
 
 In our considerations of data formats, it's crucial to draw a distinction between archival formats and those tailored for processing. A case in point is mzML, which, despite its stability over time, has faced reservations among users for certain applications. In Massbank, there exists a diversity of formats, including the less-documented Bruker MS, in contrast to the well-documented Bruker NMR.
 In the context of NMRium, an approach encapsulating both original and processed data within a single JSON file is adopted. Notably, the utilization of JSON holds the promise of longevity, as its readability is anticipated to endure over the next 30 years. Audit trails are needed and we need to be able to read the data in 30 years from now.
+
+## Towards Open NMR Data Formats - What We Want and What We Can Have
+[Dr. Johannes Liermann Presentation](https://docs.google.com/presentation/d/1QFzXAtckjrZBRC-RhCfl1dPXBVNx7wFiLdT-7kz_cGc/edit#slide=id.g255fdc7fa39_0_0)
+
+We prepare a sample with a molecule and in the spectrometer we get information that we want to assign to the molecule, which results in several layers of NMR data: raw data, processed data, assignment data and another layer that is the metadata. In higher levels in NMR it is difficult to tell what is data and what is metadata.
+
+There are several NMR formats available:
+
+- **JCAMP**: Text-based format with tags defining both metadata and actual data along with the binary data, making it lengthy if uncompressed.
+- **Bruker**: Utilizes a folder structure with various files. 'fid' file holds binary data from acquisition. 'acqu' file relates to JCAMP and provides metadata. Bruker dataset is comprehensive, containing all necessary elements to reproduce an NMR experiment.
+- **nmrML**: Employs an embedded ontology, distinguishing itself as probably the only one of the  NMR formats utilizing ontology. Predominantly recognized in the metabolomics and biology domains but can be adapted for broader use.
+- **NMReData**: Focuses beyond spectral data, extending into sdf structure and enriching it with 1D, 2D, assignments, coupling constants, and correlations.
+
+The landscape: JCAMP and Bruker cover raw and processed data and if at all assignment data.
+nmrML covers a little assignment but not designed for that. NMReDara is covers only assignment data.
+
+### Challenges Examples:
+
+
+    Challenge: 
+    Solution: Establishing a machine-readable syntax for pulse sequences can aid in identifying experiments and their parameters within the repository.
+
+
+- **Flip angle in Bruker**: Obtaining the flip angle information requires reference to the pulse sequence, which may be clear for chemists but poses difficulty for developers. Recognizing the specific NMR experiment, such as HMBC, within a repository can indeed be challenging due to the diverse pulse sequence names. However, they all follow a machine readable syntax that can identify the experiment.
+- **TOCSY Experiment Naming Complexity**: TOCSY experiment names can be intricate, especially when the term "TOCSY" is not explicitly mentioned.
+- **Deciphering Pulse Program Information**: In cases like d8 representing the mixing time, finding the relevant information in the dataset file (D field) may be challenging as you have to find the 8th one.
+- **Locating Coupling Constants**: Coupling constants may be embedded in the pulse sequence, requiring additional steps for retrieval.
+- **Ontologies**: Maintaining consistency in units, solvent values, and experiment types can be challenging without standardized ontologies. We need to actively contribute to and utilize available NMR ontologies
+
+### Discussion:
+
+Establishing a mapping between ontology descriptions and vendors' datasets emerges as a crucial step. Later on, software can take an ontology and select a relevant branch of it for example to ask the user to pick a solvent. To initiate the effective integration of ontologies into a format, the we need following considerations: The primary requirement is to incorporate unique identifiers for ontology terms, as the software doesn’t need to understand the semantic of the term at this level. Integration of a unit ontology can enhance the consistency and accuracy of data representation. 
+
+What do we want from an open NMR format? Do we need one to start with?
+
+- Bruker's documentation being open is a positive step. If it becomes even more widely adopted, it could potentially fulfill the needs of the NMR community, and it might reduce the immediate need for a separate open format. Developing and maintaining an open format requires considerable resources and collaboration. Modernizing Bruker formats might be a pragmatic approach, given their widespread usage.
+
+- JCAMP's popularity for Electronic Lab Notebooks (ELNs) makes it challenging to replace with Bruker formats,. Overlapping documentation for various analytical techniques using JCAMP can lead to confusion and hinder effective utilization. Despite JCAMP's capacity for metadata, there are limitations in including crucial information, emphasizing the need for enhancements. JCAMP's textual nature poses challenges for modern parsers, discouraging efforts to update and modernize it. The lack of a standardized way to validate JCAMP, requiring parsers writing for all "standard" versions, adds complexity to the format. Introducing ontologies into JCAMP may face resistance due to concerns that such modifications might not align with the preferences or understanding of chemists.
+
+Collaborating with IUPAC by incorporating elements from Bruker and seeking IUPAC recommendations could be a strategic approach to improving and modernizing JCAMP. We can enhance JCAMP by identifying and determining the minimum information missing there and incorporating them. Utilizing the dot in JCAMP for optional fields could offer a structured way to add relevant information specific to NMR.
+
+### We Are Still Stuck With The Question of What Format to Go With
+
+- The consensus is to focus on enhancing existing formats rather than developing entirely new ones. The applied modifications should remain minimal. 
+- Acknowledgment that JCAMP, while popular, has limitations and misses important elements. This serves as a motivation to enhance and improve the format to capture more comprehensive data. A suggestion to take the JCAMP model and provide an additional serialization in JSON format, while emphasizing the importance of validation and testing, particularly for industry use.
+
+Conclusion:
+- Considering the option of having the existing files with an additional JSON file for metadata. We need use cases where available formats fall short is highlighted. Existing NMR formats are not perceived as "bad enough" to warrant the development of entirely new formats. This reflects a pragmatic approach to evolving the current standards.
