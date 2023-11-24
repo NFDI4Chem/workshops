@@ -8,7 +8,7 @@ sidebar_position: 1
 Jena: 19.07.2023
 
 ## Participants (Alphabetically)
-[Prof. Christoph Steinbeck](https://orcid.org/0000-0001-6966-0814), Dr. Eva Ziegler, [Dr. Johannes Liermann](https://orcid.org/0000-0003-2060-842X), [prof Luc Patiny](https://orcid.org/0000-0002-4943-2643), [Dr. Nils Schlörer](https://orcid.org/0000-0002-0990-9582) ,   Ms. Nisha Sharma, Ms. Noura Rayya, Dr. Pavel Kessler, [Dr. Stefan Kuhn](https://orcid.org/0000-0002-5990-4157), [Dr. Steffen Neumann](https://orcid.org/0000-0002-7899-7192), [Dr. Tillmann Fischer](https://orcid.org/0000-0003-4480-8661), [Mr. Venkata Chandra Sekhar Nainala](https://orcid.org/0000-0002-2564-3243)
+[Prof. Christoph Steinbeck](https://orcid.org/0000-0001-6966-0814), Dr. Eva Ziegler, [Dr. Johannes Liermann](https://orcid.org/0000-0003-2060-842X), [prof Luc Patiny](https://orcid.org/0000-0002-4943-2643), [Dr. Nils Schlörer](https://orcid.org/0000-0002-0990-9582) , Ms. Nisha Sharma, [Ms. Noura Rayya](https://orcid.org/0009-0001-5998-5030), Dr. Pavel Kessler, [Dr. Stefan Kuhn](https://orcid.org/0000-0002-5990-4157), [Dr. Steffen Neumann](https://orcid.org/0000-0002-7899-7192), [Dr. Tillmann Fischer](https://orcid.org/0000-0003-4480-8661), [Mr. Venkata Chandra Sekhar Nainala](https://orcid.org/0000-0002-2564-3243)
 
 
 ## Recommendations Standard for Reporting Liquid-State NMR Experiments of Small Molecules
@@ -20,7 +20,7 @@ The recommendations started with metadata for reporting NMR analyses of syntheti
 
 [Here is the link to the recommendations draft](https://docs.google.com/document/d/1fPltMeYXRmpCnzSOznekDpavrbIqzrpMyd8plNnrYcU/edit), which will be open for editing until publication.
 
-##  Scientific applications development - NMRium
+##  Scientific Applications Development - NMRium
 
 Here we show Zakodium approach for the development of NMRium and how to make programming fair. Central to their methodology is the creation of highly sought-after libraries, such as React components including parsers, jcamp or Bruker converters, and tools for generating jcamp from other data.Zakodium adopts the practice of conventional committing to facilitate the automated generation of the change log based on bug fixes and new features, seamlessly closing associated issues. They harness continuous integration and leverage automatic GitHub testing. "Coverage" tells how much of the code was tested and which lines weren't, usually over 80% of the code is tested. 
 
@@ -93,3 +93,59 @@ Collaborating with IUPAC by incorporating elements from Bruker and seeking IUPAC
 
 Conclusion:
 - Considering the option of having the existing files with an additional JSON file for metadata. We need use cases where available formats fall short is highlighted. Existing NMR formats are not perceived as "bad enough" to warrant the development of entirely new formats. This reflects a pragmatic approach to evolving the current standards.
+
+## nmrXiv + NMRium as The Open Source Choice for NMR Platforms
+
+[Dr. Nils Schlörer Presentation](https://drive.google.com/file/d/1xXmRkBTjp-Q3IbBDZZMkUgKN3SKHevFE/view?usp=sharing)
+
+The focus is on academia, not the industry. What tasks in the lab and the ideal workflow and what bottlenecks we have. What features we could have by merging nmrium with nmrXiv in such environment.
+Laboratories lack standardization, with variations in tools, systems, and practices, including the use of various systems such as LIMS (Laboratory Information Management Systems) and servers. Exploring the potential benefits of open access and automation in academic labs, with a particular emphasis on facilitating data submission without the need for a formal paper submission process, and providing the data to the user with accounts.
+
+The repository, especially when integrated with applications like NMRium, becomes a valuable resource not only for visualization but also for data processing and assignment. Repositories have 
+two aspects:
+- Administrator's Role: Involves quality checks, ranking, and overall management of the repository.
+- User Expectations: Consideration of user expectations and the importance of user-friendly interfaces. Understanding user needs is crucial, and overly complex or needy submission processes may deter users.
+
+Highlighting the importance of providing added value to users. For example, NMRium suggesting assignments for 2D spectra, which is a common need in routine analyses. 
+
+
+### Ideal Laboratory NMR Workflow
+The ideal laboratory NMR workflow for generating data ready for submission involves several key considerations to streamline the process and enhance user experience:
+- **Hosted Data Storage**: Encourage the hosting of data in repositories rather than relying on local storage. Overcoming the preference for local storage by chemists can enhance data accessibility and sharing.
+- **Structure Linkage**: Ensure that each spectrum is linked to at least one corresponding chemical structure. Despite being common, the practice of not submitting structures should be hindered
+- **Consistent Local and Public Format**: Promote the use of a consistent format for both local and public data storage. This minimizes the need for users to switch between different systems, ensuring a seamless workflow.
+- **Integrated Visualization and Processing**: Provide tools for direct visualization and processing of data on the same platform after data is created. Integrated capabilities eliminate the need for users to rely on external software, enhancing efficiency.
+- **Living Data with NMRium**: Implement the concept of "living data" with tools like NMRium in platforms such as nmrXiv. This approach ensures that data remains dynamic and interactive, allowing users to explore and analyze it comprehensively.
+- **Digital Availability of 2D Information**: Shift from the current practice where people distribute some digital data and do paper assignment and the 2D information is usually mainly ignored.
+- **Unified Interface for All Tasks**: Provide a unified interface that caters to all tasks, from data submission to visualization and processing.
+- **Suggested Assignment Feature**: Incorporate a feature that suggests assignments to users. This not only adds value, but also makes the platform more attractive and user-friendly.
+- **Assignment Control**: There should be some assignment control to check the plausibility by chemical shift comparisons but also can be used with case environment including logic, and if people do some assignment the system should be capable of continuing the job.
+
+### Success Factors:
+
+The success factors for an ideal NMR repository revolve around simplifying the user experience. Here's a breakdown of the key success factors:
+- **Minimizing Interfaces**: Chemists are averse to handling multiple interfaces, potentially leading them to revert to traditional paper methods. The repository should provide a unified interface, streamlining all steps of the NMR workflow featured below:
+![Ideal NMR Workflow](@site/static/img/nmr/nils.png)
+
+- **Consistent Structure Provision**: Ensuring that structures are consistently provided with every NMR dataset submission.
+- **Privacy and Data Sharing Options**: Privacy concerns users and we need flexible data sharing options, offering robust privacy features, including the ability to publish data with restricted access to specific groups. Providing users with options for controlling data visibility fosters trust and compliance instead of just missing the data.
+
+![Ideal NMR Compilation](@site/static/img/nmr/compilation.png)
+
+### Discussion:
+The discussion underscores the importance of including Electronic Lab Notebooks (ELNs) in the vision for NMR data management.  Core facilities should play the role of raising the bar for data digitization. However, not all facilities may currently have the autonomy to enforce these practices, but they still should try for the better. Funders, such as DFG, can influence data quality by tying funding to specific standards. This creates a mechanism for control over data quality from the funder's perspective. The use of commercial management systems in the Jena platform lead to replacing traditional paper-based workflows. This shift underscores the practical adoption of digital tools. However, searching is based on people and groups rather than molecules. This limitation is attributed to the non-mandatory submission of structures.
+
+nmrXiv repository layer is ready, with ongoing enhancements to the submission and molecule layers. Plans include building prediction and search layers separate from nmrXiv to facilitate broader usage. We already work with Chemotion, an open-source ELN that we found to be the best in the chemistry domain.
+
+## NMR Data Packaging with Metadata in NFDI4Chem
+[Ms. Noura Rayya Presentation](https://docs.google.com/presentation/d/1w72LL1qQl27pSHHPIV3uS79tTyZq5LD-c9Eu5cjgXFQ/edit#slide=id.g25304c5fa4f_0_0)
+
+NMR Metadata Availability in NFDI4Chem: NFDI4Chem services, including nmrXiv (NMR data repository) and Chemotion (Repository for samples, reactions, and the accompanying analytical data), provide NMR metadata in a structured JSON format. This format adheres to schema.org and Bioschemas types, ensuring standardized representation.  The use of NMRium in nmrXiv and Chemotion ensures a high extraction of metadata. This metadata can be translated into schema JSON and further optimized to include all the minimum information, while recommended and optional data can still partially depends on user's input. The platforms already provide the means for users to input some of this data.
+
+Metadata Loss during Data Download: Currently, for both repositories, when users download data, no structured metadata files are automatically added within the folder. This lack of inclusion poses a risk of potential metadata loss during the download process. In Chemotion, even datasets belonging to the same reaction need to be downloaded individually. This can be cumbersome and may contribute to a fragmented dataset. Users need to go through a separate download/export process to obtain metadata. This involves using separate download buttons (Chemotion) or making API calls (nmrXiv), adding an extra step to access metadata.
+
+In Chemotion, it is common to find additional chemical materials in the "description" field that may not be present in the reaction table. This adds complexity when deciding what metadata to export, as there may be supplementary information in unstructured fields.
+
+The need to package related data and metadata together in one folder is crucial for efficient data management. Data packaging involves using tools to containerize data along with its associated metadata in a format that is both human- and machine-readable. 
+
+Data packaging tools request metadata to be structured, ensuring that it follows a standardized format that is both human- and machine-readable. Some tools incorporate data integrity checks to monitor the data and ensure its consistency throughout different processes, such as downloading, zipping/unzipping, and transferring. The tools also provide packaged data in formats that are convenient to transfer and download.
