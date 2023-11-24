@@ -63,11 +63,6 @@ nmrML covers a little assignment but not designed for that. NMReDara is covers o
 
 ### Challenges Examples:
 
-
-    Challenge: 
-    Solution: Establishing a machine-readable syntax for pulse sequences can aid in identifying experiments and their parameters within the repository.
-
-
 - **Flip angle in Bruker**: Obtaining the flip angle information requires reference to the pulse sequence, which may be clear for chemists but poses difficulty for developers. Recognizing the specific NMR experiment, such as HMBC, within a repository can indeed be challenging due to the diverse pulse sequence names. However, they all follow a machine readable syntax that can identify the experiment.
 - **TOCSY Experiment Naming Complexity**: TOCSY experiment names can be intricate, especially when the term "TOCSY" is not explicitly mentioned.
 - **Deciphering Pulse Program Information**: In cases like d8 representing the mixing time, finding the relevant information in the dataset file (D field) may be challenging as you have to find the 8th one.
