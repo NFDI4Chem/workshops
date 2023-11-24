@@ -1,8 +1,8 @@
 [![License](https://img.shields.io/badge/License-MIT%202.0-blue.svg)](https://opensource.org/licenses/MIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://GitHub.com/NFDI4Chem/workshops/graphs/commit-activity)
-[![GitHub issues](https://img.shields.io/github/issues/NFDI4Chem/nmrxiv.svg)](https://GitHub.com/NFDI4Chem/workshops/issues/)
-[![GitHub contributors](https://img.shields.io/github/contributors/NFDI4Chem/nmrxiv.svg)](https://GitHub.com/NFDI4Chem/workshops/graphs/contributors/)
-[![Powered by Docusaurus](https://img.shields.io/badge/Powered%20by-Laravel-red.svg?style=flat&logo=Laravel)](https://docusaurus.io/)
+[![GitHub issues](https://img.shields.io/github/issues/NFDI4Chem/workshops.svg)](https://GitHub.com/NFDI4Chem/workshops/issues/)
+[![GitHub contributors](https://img.shields.io/github/contributors/NFDI4Chem/workshops.svg)](https://GitHub.com/NFDI4Chem/workshops/graphs/contributors/)
+[![Powered by Docusaurus](https://img.shields.io/badge/Powered%20by-Docusaurus-red.svg?style=flat&logo=Laravel)](https://docusaurus.io/)
 
 ## About The Workshops
 NFDI4Chem is developing domain-specific MI standards in a series of workshops in different subdisciplines of chemistry facilitated and organised by NFDI4Chem. Each of the developed standards will be a modular recommendation for Minimum Information on Chemical Investigations (MIChIs). This website serves as a documentation hub for the proposed MIChIs and provides insights into the workshops conducted to refine and advance these standards. 
