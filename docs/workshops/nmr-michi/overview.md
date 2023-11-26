@@ -144,3 +144,62 @@ In Chemotion, it is common to find additional chemical materials in the "descrip
 The need to package related data and metadata together in one folder is crucial for efficient data management. Data packaging involves using tools to containerize data along with its associated metadata in a format that is both human- and machine-readable. 
 
 Data packaging tools request metadata to be structured, ensuring that it follows a standardized format that is both human- and machine-readable. Some tools incorporate data integrity checks to monitor the data and ensure its consistency throughout different processes, such as downloading, zipping/unzipping, and transferring. The tools also provide packaged data in formats that are convenient to transfer and download.
+
+### Data Packaging Approaches
+
+#### BagIt
+BagIt provides file layout conventions for data packaging. Here's an overview of the key components of BagIt:
+- Root Folder - "Bag": The root folder, referred to as the "bag," is the primary container for organizing the data. It is has two types of files:
+  - Payload Files: The main data files.
+  - Tag Files: Tag files serve a descriptive role, providing metadata or additional information about the contents of the "bag." 
+    
+![BagIt](@site/static/img/nmr/bagit.png)
+
+The BagIt structure provides a clear and organized approach for data packaging. Here's a summary of the key components and requirements of the bag (root folder):
+- **Bag Declaration (bagit.txt)**: The "bagit.txt" tag file establishes the BagIt version and character encoding for tag files. It MUST consist of exactly two lines in this order:
+  - BagIt-Version: M.N
+  - Tag-File-Character-Encoding: ENCODING
+- **Payload Manifest (manifest-algorithm.txt)**: The payload manifest file lists each payload file name alongside a corresponding checksum. This allows for robust data integrity checking. A bag can have multiple payload manifests, each using a different checksum algorithm.
+- **Additional Tag Files**: BagIt allows for the inclusion of other tag files. For instance, adding DataCite metadata or RO-Crate JSON files enhances the bag's descriptive capabilities and interoperability with different metadata standards.
+- **Subdirectory "data"**: The base directory MUST contain a subdirectory named "data." 
+
+BagIt has its format to integrate checksum algorithms allowing data integrity checking. It additionally offers flexibility in the folder structure to add different metadata files as it suits the user. However, it doesn’t provide a structured way NMR related metadata. And even its structured specifications are txt based (https://datatracker.ietf.org/doc/html/rfc8493#section-2.2.2 )
+
+#### RO-Crate
+
+RO-Crate (Research Object Crate) is a method of aggregating and describing research data with associated metadata. This includes information about its creators, the equipment utilized, and the licensing terms for subsequent reuse.
+
+RO-Crate leverages JSON-LD (JSON for Linked Data) to express metadata, describing data resources as well as contextual entities such as people, organizations, software, and equipment as a series of linked JSON-LD objects, utilizing commonly adopted vocabularies, primarily schema.org.
+
+- The root directory is identifiable by the presence of the RO-Crate Metadata File, named ro-crate-metadata.json.
+- The core of RO-Crate is a JSON-LD file, the RO-Crate Metadata File, named ro-crate-metadata.json. This file contains structured metadata about the dataset as a whole (the Root Data Entity). Optionally, this file may also contain metadata about some or all of the individual files within the dataset. This structured metadata file offers a straightforward means to assert assert the authors (e.g. people, organizations) of the RO-Crate or one its files. Additionally, it enables the capture of more intricate provenance information for files, encompassing details about how they were created using specific software and equipment.
+- Payload files and directories: These are the actual files and directories that make up the dataset being described.
+
+![RO-Crate](@site/static/img/nmr/ro-crate.png)
+
+An important distinction exists between the interpretation of datasets in RO-Crate and nmrXiv from NFDI4Chem, particularly in the categorization of folders within the root directory. While RO-Crate designates **all** folders within any level of the root as "Datasets," nmrXiv considers a complete NMR assay (e.g., a Bruker folder or jcamp file) as a dataset, causing a huge confusion. This discrepancy becomes evident when, for example, a "Bruker" folder is present within the root, qualifying as a dataset according to RO-Crate's definition. Simultaneously, a "pdata" folder within the Bruker folder may also be considered a dataset within the RO-Crate framework. In contrast, nmrXiv views the entire assay folder as a dataset.
+
+Additionally, two identical Bruker and Jcamp assays will have different types in RO-Crate. The [presentation](https://docs.google.com/presentation/d/1w72LL1qQl27pSHHPIV3uS79tTyZq5LD-c9Eu5cjgXFQ/edit#slide=id.g25304c5fa4f_0_0) demos many scenarios which won't work, including representing The NMR assay as RO-Crate root or grouping them under the root. 
+
+### NFDI4Chem Proposal
+NFDI4Chem advocates for a synergistic approach that harnesses the strengths of multiple packaging tools along with schema.org metadata to enhance the representation of NMR-specific data. The proposed combination includes:
+
+- BagIt: For data integrity check.
+- RO-Crate: For folders structure.
+- Schema.org: For NMR-specific metadata.
+
+[Here is a link](https://drive.google.com/drive/folders/1T76q_5y3FAvxs7k71hlsyAfwKAIZ66DU) to an exemplary NMR package.
+
+![proposal](@site/static/img/nmr/proposal.png)
+
+## nmrCV Controlled Vocabulary
+
+nmrCV, was initially developed as part of nmrML before 2019, and we still use it as an NMR controlled vocabulary. 
+nmrCV still needs:
+- Structure cleaning in terms of hierarchy.
+- Identifying and addressing missing terms.
+- Collaboration and importing relevant content.
+- Using ODK to dockerize the CV and manage its continuous integration.
+
+
+
