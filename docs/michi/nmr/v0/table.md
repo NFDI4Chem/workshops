@@ -4,6 +4,10 @@ sidebar_position: 2
 
 # Tabular Guidelines
 
+Level 1: Required Minimum information. Can be identified by cardinality no less than 1 and by being provided in red. 
+
+Level 2: Recommended. Can be identified by cardinality starting from 0 and by being provided in green.
+
 |<p style={{ color: 'teal' , fontWeight: 'bold' }}>No.</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Metadata</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>NFDI4Chem ID</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Definition</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Export Format</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>C</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>FAIRspec Property</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Human-Readable Example</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Machine-Readable Example</p>|<p style={{ color: 'teal' , fontWeight: 'bold' }}>Comments</p>|
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |<p style={{ color: 'grey' , fontWeight: 'bold' }}>1</p>|<p style={{ color: 'grey' , fontWeight: 'bold' }}>NMR Sample</p>|<p style={{ color: 'grey' , fontWeight: 'bold' }}>NFDI.nmr.sample</p>|<p style={{ color: 'grey' , fontWeight: 'bold' }}>[NMR:1400128](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400128)</p>||<p style={{ color: 'grey' , fontWeight: 'bold' }}>1</p>|||||
