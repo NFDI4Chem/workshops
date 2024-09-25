@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkworkshops=self.webpackChunkworkshops||[]).push([[3580],{5247:s=>{s.exports=JSON.parse('{"label":"facebook","permalink":"/workshops/blog/tags/facebook","allTagsPath":"/workshops/blog/tags","count":1}')}}]);
