@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkworkshops=self.webpackChunkworkshops||[]).push([[1444],{2527:o=>{o.exports=JSON.parse('{"permalink":"/workshops/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
