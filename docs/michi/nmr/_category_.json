@@ -3,7 +3,7 @@
     "position": 2,
     "link": {
       "type": "generated-index",
-      "description": "This recommendation standard is a proposal from NFDI4Chem to outline essential metadata required for documenting liquid-state NMR experiments of small molecules. We aim to make it suitable for NMR repositories and the supplementary materials of publications.The standard consists of textual guidelines explaining the meaning and purpose of the more concise tabular recommendations. Both can be found below."
+      "description": "This recommendation standard is a proposal from NFDI4Chem to outline essential metadata required for documenting liquid-state NMR experiments of small molecules. We aim to make it suitable for NMR repositories and the supplementary materials of publications. The standard consists of two parts: tabular recommendations that include the actual checklist of properties and textual guidelines explaining the meaning and use of the checklist. We actively maintain and optimise our MIChI, which results in new versions. Below, you can find all the available versions. Please use the last one."
     }
   }
   

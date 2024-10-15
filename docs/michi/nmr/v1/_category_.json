@@ -3,7 +3,7 @@
     "position": 3,
     "link": {
       "type": "generated-index",
-      "description": "This is the first version."
+      "description": "This is the first official version of NFDI4Chem NMR MIChI \"MARGARITAS\". Please refrain from using any previous versions as they were merely drafts."
     }
   }
   

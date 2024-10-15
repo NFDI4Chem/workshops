@@ -21,7 +21,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td>Comments</td>
   </tr>
   <tr style={{ backgroundColor: '#000000', color: 'white', fontWeight: 'bold'}}>
-    <td>0</td>
+    <td>1</td>
     <td>NMR Spectroscopy Assay</td>
     <td>NFDI.nmr.assay</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000623&obsoletes=false" style={{ textDecoration: 'underline'}}>NMR spectroscopy assay (OBI:0000623)</a></td>
@@ -29,10 +29,10 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td>1</td>
     <td>Human-Readable Example</td>
     <td>Machine-Readable Example</td>
-    <td>By an assay we mean the single NMR assay (1H, HSQC...) and not the entire experiment where multiple assays are possibly run.</td>
+    <td>By an assay, we mean the single NMR measurement (1H, HSQC...) and not the entire experiment where multiple assays are possibly run.</td>
   </tr>
   <tr style={{ backgroundColor: '#666666', color: 'white', fontWeight: 'bold'}}>
-    <td>0.1</td>
+    <td>1.1</td>
     <td>NMR Sample</td>
     <td>NFDI.nmr.sample</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400128" style={{ textDecoration: 'underline'}}>NMR sample (NMR:1400128)</a></td>
@@ -40,25 +40,25 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td>1</td>
     <td></td>
     <td></td>
-    <td>By an NMR sample we mean the last sample that is ready for placing in the instrument, i.e, in liquid-state NMR, it will already have the NMR solvent added along other possible additions.</td>
+    <td>By an NMR sample, we mean the last sample ready for placing in the instrument, i.e., in liquid-state NMR, it will already have the NMR solvent added along with other possible additions.</td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.1.1</td>
+    <td>1.1.1</td>
     <td>Characterized Compound</td>
     <td>NFDI.nmr.sample.compound</td>
     <td>A compound characterized in an NMR sample using data acquired from an NMR analysis. </td>
     <td>
       <li>mol </li>
       <li>ChEBI ID or IRI that is a leaf of the ontology term <a href="https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_23367&obsoletes=false" style={{ textDecoration: 'underline'}}>molecular entity (CHEBI:23367)</a></li>
-      <li>Pubchem ID </li>
+      <li>PubChem ID </li>
     </td>
     <td style={{ whiteSpace: 'nowrap'}}>1-n</td>
     <td>caffeine </td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27732&obsoletes=false" style={{ textDecoration: 'underline'}}>CHEBI:27732</a></td>
-    <td>This value is to be filled after the assignment. mol file is mandatory while CHEBI and Pubchem entries are only recommended to provide when available.</td>
+    <td>This value is to be filled in after the assignment. mol file is mandatory, while CHEBI and PubChem entries are only recommended be provided when available.</td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.1.2</td>
+    <td>1.1.2</td>
     <td>NMR Solvent</td>
     <td>NFDI.nmr.sample.solvent</td>
     <td><a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:197449" style={{ textDecoration: 'underline'}}>NMR solvent (CHEBI:197449)</a></td>
@@ -71,7 +71,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.1.2.1</td>
+    <td>1.1.2.1</td>
     <td>NMR Solvent Volume/Volume Ratio</td>
     <td>NFDI.nmr.sample.solvent.ratio</td>
     <td> <a href="https://www.ebi.ac.uk/ols4/ontologies/snomed/classes/http%3A%2F%2Fsnomed.info%2Fid%2F282380000?iri=http%3A%2F%2Fsnomed.info%2Fid%2F282380000" style={{ textDecoration: 'underline'}}>Volume/volume ratios (SNOMED:282380000)</a> of <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:197449" style={{ textDecoration: 'underline'}}>NMR solvents (CHEBI:197449)</a></td>
@@ -82,7 +82,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.1.3</td>
+    <td>1.1.3</td>
     <td>Chemical Shift Calibration Compound</td>
     <td>NFDI.nmr.sample.<br/>chemical_shift_calibration_compound</td>
     <td>A compound that produces one or more peaks used to calibrate the spectrum.</td>
@@ -93,7 +93,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.1.3.1</td>
+    <td>1.1.3.1</td>
     <td>Chemical Shift Calibration Compound Peak Shift</td>
     <td>NFDI.nmr.sample.<br/>chemical_shift_calibration_compound.<br/>peak_shift</td>
     <td>The chemical shift of the peak used for chemical shift calibration.</td>
@@ -104,7 +104,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.1.4</td>
+    <td>1.1.4</td>
     <td>NMR Sample Tube Diameter</td>
     <td>NFDI.nmr.sample.tube_diameter</td>
     <td>The outer diameter of the <a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400132" style={{ textDecoration: 'underline'}}>NMR sample tube (NMR:1400132)</a></td>
@@ -115,7 +115,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.1.5</td>
+    <td>1.1.5</td>
     <td>NMR Sample Tube Type</td>
     <td>NFDI.nmr.sample.tube_type</td>
     <td>The type of the <a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400132" style={{ textDecoration: 'underline'}}>NMR sample tube (NMR:1400132)</a></td>
@@ -126,7 +126,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#666666', color: 'white', fontWeight: 'bold'}}>
-    <td>0.2</td>
+    <td>1.2</td>
     <td>NMR Acquisition Parameters</td>
     <td>NFDI.nmr.acquisition</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1001954" style={{ textDecoration: 'underline'}}>NMR acquisition parameter (NMR:1001954)</a></td>
@@ -137,7 +137,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.2.1</td>
+    <td>1.2.1</td>
     <td>Acquisition Nucleus</td>
     <td>NFDI.nmr.acquisition.nucleus</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083" style={{ textDecoration: 'underline'}}>Acquisition Nucleus (NMR:1400083)</a></td>
@@ -149,7 +149,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.2.2</td>
+    <td>1.2.2</td>
     <td>Nominal Proton Frequency</td>
     <td>NFDI.nmr.acquisition.<br/>proton_frequency</td>
     <td>Resonance frequency of 1H at the <a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400253&obsoletes=false" style={{ textDecoration: 'underline'}}>field strength of the NMR magnet (NMR:1400253)</a>, rounded to 10-fold numbers.</td>
@@ -160,7 +160,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td>Users must provide precision of 10-folds numbers</td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.2.3</td>
+    <td>1.2.3</td>
     <td>NMR Method</td>
     <td>NFDI.nmr.acquisition.method</td>
     <td>An analytical method used in NMR spectroscopy defined by the class of pulse sequence and number of dimensions.</td>
@@ -171,7 +171,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.2.4</td>
+    <td>1.2.4</td>
     <td>Pulse Sequence Name</td>
     <td>NFDI.nmr.acquisition.pulse</td>
     <td>The name of the pulse sequence used to perform the acquisition.</td>
@@ -182,7 +182,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.5</td>
+    <td>1.2.5</td>
     <td>Flip Angle</td>
     <td>NFDI.nmr.acquisition.flip_angle</td>
     <td><a href="https://www.degruyter.com/document/doi/10.1515/pac-2019-0203/html" style={{ textDecoration: 'underline'}}>Rotation that the net magnetization experiences during the application of a radiofrequency pulse in nuclear magnetic resonance spectroscopy.</a></td>
@@ -193,7 +193,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.6</td>
+    <td>1.2.6</td>
     <td>Relaxation Delay</td>
     <td>NFDI.nmr.acquisition.relaxation_delay</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400090" style={{ textDecoration: 'underline'}}>relaxation delay (NMR:1400090)</a></td>
@@ -204,7 +204,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.7</td>
+    <td>1.2.7</td>
     <td>Number of Acquisition Data Points</td>
     <td>NFDI.nmr.acquisition.<br/>number_of_acquisition_data_points</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400017" style={{ textDecoration: 'underline'}}>number of acquisition data points (NMR:1400017)</a></td>
@@ -215,7 +215,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.8</td>
+    <td>1.2.8</td>
     <td>Sample Temperature Information</td>
     <td>NFDI.nmr.acquisition.temperature</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400262" style={{ textDecoration: 'underline'}}>sample temperature information (NMR:1400262)</a></td>
@@ -226,7 +226,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.9</td>
+    <td>1.2.9</td>
     <td>Number of Scans</td>
     <td>NFDI.nmr.acquisition.<br/>number_of_scans</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400087" style={{ textDecoration: 'underline'}}>number of scans (NMR:1400087)</a></td>
@@ -237,7 +237,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.10</td>
+    <td>1.2.10</td>
     <td>Pulse Power or Pulse Power Gradient</td>
     <td>NFDI.nmr.acquisition.pulse_power</td>
     <td>The power of the applied RF pulse. Or the power gradient of the applied RF pulse.</td>
@@ -248,7 +248,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.11</td>
+    <td>1.2.11</td>
     <td>Spectral Width</td>
     <td>NFDI.nmr.acquisition.spectral_width</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000175&obsoletes=false" style={{ textDecoration: 'underline'}}>Sweep Width (NMR:1000175)</a></td>
@@ -259,7 +259,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.12</td>
+    <td>1.2.12</td>
     <td>Acquisition Time</td>
     <td>NFDI.nmr.acquisition.acquisition_time</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/afo/terms?iri=http%3A%2F%2Fpurl.allotrope.org%2Fontologies%2Fresult%23AFR_0001158&obsoletes=false" style={{ textDecoration: 'underline'}}>acquisition time (AFR:0001158)</a></td>
@@ -270,7 +270,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.13</td>
+    <td>1.2.13</td>
     <td>Usage of Shaped Radio Frequency Pulse</td>
     <td>NFDI.nmr.acquisition.shaped_pulse</td>
     <td>Whether a <a href="https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0001870&obsoletes=false" style={{ textDecoration: 'underline'}}>shaped radio frequency pulse (CHMO:0001870)</a> was used.</td>
@@ -281,7 +281,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.14</td>
+    <td>1.2.14</td>
     <td>Mixing Time</td>
     <td>NFDI.nmr.acquisition.mixing_time</td>
     <td>The duration during which coherence transfer occurs between different nuclear spins, allowing for the correlation of different frequencies.</td>
@@ -292,7 +292,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td style={{ backgroundColor: '#d9ead3'}}>Mandatory for NOE, TOCSY</td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.2.15</td>
+    <td>1.2.15</td>
     <td>Constant Time</td>
     <td>NFDI.nmr.acquisition.constant _time</td>
     <td>The fixed time period in a <a href="https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0001874&obsoletes=false" style={{ textDecoration: 'underline'}}>constant time method (CHMO:0001874) </a></td>
@@ -303,7 +303,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#666666', color: 'white', fontWeight: 'bold'}}>
-    <td>0.3</td>
+    <td>1.3</td>
     <td>NMR Instrument</td>
     <td>NFDI.nmr.instrument</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400059" style={{ textDecoration: 'underline'}}>NMR instrument (NMR:1400059)</a></td>
@@ -314,7 +314,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.3.1</td>
+    <td>1.3.1</td>
     <td>NMR Instrument Manufacturer</td>
     <td>NFDI.nmr.instrument.manufacturer</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400255" style={{ textDecoration: 'underline'}}>NMR instrument manufacturer (NMR:1400255)</a></td>
@@ -325,7 +325,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.3.2</td>
+    <td>1.3.2</td>
     <td>NMR Instrument Model</td>
     <td>NFDI.nmr.instrument.model</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000031" style={{ textDecoration: 'underline'}}>NMR instrument model (NMR:1000031)</a></td>
@@ -336,7 +336,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.3.3</td>
+    <td>1.3.3</td>
     <td>NMR Probe</td>
     <td>NFDI.nmr.instrument.probe</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400014" style={{ textDecoration: 'underline'}}>NMR probe (NMR:1400014)</a></td>
@@ -347,7 +347,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#666666', color: 'white', fontWeight: 'bold'}}>
-    <td>0.4</td>
+    <td>1.4</td>
     <td>NMR Data Processing</td>
     <td>NFDI.nmr.processing</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400042" style={{ textDecoration: 'underline'}}>NMR data processing (NMR:1400042)</a></td>
@@ -358,7 +358,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
-    <td>0.4.1</td>
+    <td>1.4.1</td>
     <td>Chemical Shift Reference Compound</td>
     <td>NFDI.nmr.processing.<br/>chemical_shift_reference_compound</td>
     <td><a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:228364" style={{ textDecoration: 'underline'}}>NMR chemical shift reference compound (CHEBI:228364)</a></td>
@@ -369,7 +369,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.2</td>
+    <td>1.4.2</td>
     <td>Number of Zero Filling Points</td>
     <td>NFDI.nmr.processing.zero_filling</td>
     <td>Number of data points of the FID after zero filling.</td>
@@ -380,7 +380,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.3</td>
+    <td>1.4.3</td>
     <td>Window Function for Apodization</td>
     <td>NFDI.nmr.processing.<br/>apodization_function</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400068" style={{ textDecoration: 'underline'}}>window function for apodization (NMR:1400068)</a></td>
@@ -391,7 +391,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.3.1</td>
+    <td>1.4.3.1</td>
     <td>Window Function Parameters</td>
     <td>NFDI.nmr.processing.<br/>apodization_function.parameters</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400096" style={{ textDecoration: 'underline'}}>window function parameter (NMR:1400096)</a></td>
@@ -402,7 +402,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.4</td>
+    <td>1.4.4</td>
     <td>Baseline Correction</td>
     <td>NFDI.nmr.processing.<br/>baseline_correction</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400074" style={{ textDecoration: 'underline'}}>baseline correction (NMR:1400074)</a></td>
@@ -413,7 +413,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.4.1</td>
+    <td>1.4.4.1</td>
     <td>Baseline Correction Parameters</td>
     <td>NFDI.nmr.processing.<br/>baseline_correction.parameters</td>
     <td>A parameter to a baseline correction function.</td>
@@ -424,7 +424,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.5</td>
+    <td>1.4.5</td>
     <td>Phase Correction</td>
     <td>NFDI.nmr.processing.<br/>phase_correction</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000071" style={{ textDecoration: 'underline'}}>phase correction (NMR:1000071)</a></td>
@@ -435,7 +435,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.5.1</td>
+    <td>1.4.5.1</td>
     <td>Zero Order Phase Correction (ph0)</td>
     <td>NFDI.nmr.processing.<br/>phase_correction.ph0</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400079" style={{ textDecoration: 'underline'}}>zero order phase correction (NMR:1400079)</a></td>
@@ -446,7 +446,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.5.2</td>
+    <td>1.4.5.2</td>
     <td>First Order Phase Correction (ph1)</td>
     <td>NFDI.nmr.processing.<br/>phase_correction.ph1</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400080" style={{ textDecoration: 'underline'}}>first order phase correction (NMR:1400080)</a></td>
@@ -457,7 +457,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td></td>
   </tr>
   <tr style={{ backgroundColor: '#fff2cc', color: 'black'}}>
-    <td>0.4.6</td>
+    <td>1.4.6</td>
     <td>Usage of Absolute Correction</td>
     <td>NFDI.nmr.processing.<br/>absolute_correction</td>
     <td>Whether a method was used that removes phase information like power or magnitude mode.</td>
