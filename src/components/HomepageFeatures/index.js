@@ -22,7 +22,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Internalization',
+    title: 'Internationalization',
     Svg: require('@site/static/img/globe.svg').default,
     description: (
       <>
