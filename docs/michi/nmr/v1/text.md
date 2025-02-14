@@ -49,4 +49,6 @@ The cardinality of the four groups of requested metadata (highlighted in gray) i
 3. NMR Instrument: Cardinality = 0-1, as reporting instrument metadata is not mandatory (0), and a single assay can be conducted only in one instrument (1).
 4. NMR Data Processing: Cardinality = 1-n, as it is mandatory to report at least the **Chemical Shift Reference Compound**. One NMR assay can have different processings and therefore the "n" limit.
 
+Please note that some fields additionally get a cardinality with the letter "d", which indicates the dimensionality. For instance, the Acquisition Nucleus has a cardinality of 1-d, as the user can't report more than two nuclei in 2D NMR.
+
 Finally, both human-readable and machine-readable examples are provided for enhanced clarity and utility, accompanied by comments.
