@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkworkshops=self.webpackChunkworkshops||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/NFDI4Chem/workshops/blog","blogTitle":"Blog","authorsListPath":"/NFDI4Chem/workshops/blog/authors"}')}}]);
