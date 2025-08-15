@@ -10,8 +10,8 @@ const darkCodeTheme = themes.dracula;
 const config = {
   title: 'Minimum Information Requirements',
   tagline: 'NFDI4Chem Workshop Series' ,
-  url: 'https://github.com',
-  baseUrl: '/NFDI4Chem/workshops/',
+  url: 'https://nfdi4chem.github.io',
+  baseUrl: '/workshops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
