@@ -141,8 +141,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td>Acquisition Nucleus</td>
     <td>nfdi.nmr.acquisition.nucleus</td>
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083" style={{ textDecoration: 'underline'}}>Acquisition Nucleus (NMR:1400083)</a></td>
-    <td><b>The nuclei of atoms</b> identified by ChEBI IDs that are leaves of the ontology term <a href="https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33250&obsoletes=false" style={{ textDecoration: 'underline'}}>atom (CHEBI:33250)</a>
-    </td>
+    <td><b>The nuclei of atoms</b> identified by ChEBI IDs that are leaves of the ontology term <a href="https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33250&obsoletes=false" style={{ textDecoration: 'underline'}}>atom (CHEBI:33250)</a></td>
     <td style={{ whiteSpace: 'nowrap'}}>1-d</td>
     <td>13C</td>
     <td>The nucleus of <a href="https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_36928&obsoletes=false" style={{ textDecoration: 'underline'}}>CHEBI:36928</a></td>
