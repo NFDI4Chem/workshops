@@ -1,16 +1,15 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const { themes } = require('prism-react-renderer');
-const lightCodeTheme = themes.github;
-const darkCodeTheme = themes.dracula;
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Minimum Information Requirements',
   tagline: 'NFDI4Chem Workshop Series' ,
-  url: 'https://github.com',
-  baseUrl: '/NFDI4Chem/workshops/',
+  url: 'https://github.com/NFDI4Chem/workshops',
+  baseUrl: '/workshops/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
