@@ -88,15 +88,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Membbers',
+            title: 'Members',
             items: [
               {
                 label: 'NFDI4Chem',
                 href: 'https://www.nfdi4chem.de/',
-              },
-              {
-                label: 'IUPAC',
-                href: 'https://iupac.org/',
               },
             ],
           },

@@ -1,0 +1,11 @@
+{
+    "label": "NMR",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "description": "Our NMR MIChI is named MARGARITAS, standing for \"Michi stAndard foR reportinG liquid-stAte nmR experImenTs of smAll moleculeS\". This MIChI standard is a proposal from NFDI4Chem to outline essential metadata required for documenting liquid-state NMR experiments of small molecules. We aim to make it suitable for NMR repositories and the supplementary materials of publications. We actively maintain and optimise our MIChI, which results in new versions. Below, you can find all the available versions. Please use the last one."
+    }
+  }
+  
+
+
