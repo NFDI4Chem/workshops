@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkworkshops=globalThis.webpackChunkworkshops||[]).push([[9275],{4999:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/workshops/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
