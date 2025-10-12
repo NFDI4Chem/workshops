@@ -8,12 +8,16 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   title: 'Minimum Information Requirements',
   tagline: 'NFDI4Chem Workshop Series' ,
   url: 'https://nfdi4chem.github.io',
   baseUrl: '/workshops/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
 
   // GitHub pages deployment config.
