@@ -1,0 +1,11 @@
+{
+    "label": "UV-Vis",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "This MIChI standard is a proposal from NFDI4Chem to outline essential metadata required for documenting Ultraviolet-Visible Absorption Spectrophotometry experiments. We aim to make it suitable for repositories and the supplementary materials of publications. We actively maintain and optimise our MIChI, which results in new versions. Below, you can find all the available versions. Please use the last one."
+    }
+  }
+  
+
+
