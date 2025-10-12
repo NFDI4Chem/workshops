@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Tabular Guidelines
 
-Level 1: Required Minimum information. Can be identified by cardinality no less than 1 and by having green background. 
+Level 1: Required Minimum information. It can be identified by cardinality no less than 1 and by having green background. 
 
-Level 2: Recommended. Can be identified by cardinality starting from 0 and by by having yellow background. 
+Level 2: Recommended. It can be identified by cardinality starting from 0 and by having a yellow background. 
 <div style={{overflowX: 'auto', width: '151%'}}>
 <table >
   <tr style={{ backgroundColor: '#009cbc', color: 'white', fontWeight: 'bold'}}>
@@ -27,8 +27,8 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td><a href="https://terminology.nfdi4chem.de/ts/ontologies/obi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FOBI_0000623&obsoletes=false" style={{ textDecoration: 'underline'}}>NMR spectroscopy assay (OBI:0000623)</a></td>
     <td></td>
     <td>1</td>
-    <td>Human-Readable Example</td>
-    <td>Machine-Readable Example</td>
+    <td></td>
+    <td></td>
     <td>By an assay, we mean the single NMR measurement (1H, HSQC...) and not the entire experiment where multiple assays are possibly run.</td>
   </tr>
   <tr style={{ backgroundColor: '#666666', color: 'white', fontWeight: 'bold'}}>
@@ -156,7 +156,7 @@ Level 2: Recommended. Can be identified by cardinality starting from 0 and by by
     <td style={{ whiteSpace: 'nowrap'}}>1-d</td>
     <td>400 MHz</td>
     <td>400 <a href="https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000325&obsoletes=false" style={{ textDecoration: 'underline'}}>UO:0000325</a></td>
-    <td>Users must provide precision of 10-folds numbers</td>
+    <td>Users must provide precision of 10-fold numbers</td>
   </tr>
   <tr style={{ backgroundColor: '#d9ead3', color: 'black'}}>
     <td>1.2.3</td>
