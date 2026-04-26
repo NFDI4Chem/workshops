@@ -1,0 +1,9 @@
+{
+    "label": "Version 1",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "This is the first official version of NFDI4Chem's MIChI Standard for Reporting Ultraviolet-Visible Absorption Spectrophotometry. lease refrain from using any previous versions as they were merely drafts."
+    }
+  }
+
