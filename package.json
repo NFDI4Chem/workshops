@@ -30,7 +30,13 @@
   "resolutions": {
     "serialize-javascript": "^7.0.5", 
     "ws": "^8.20.1", 
-    "uuid": "^11.1.1" 
+    "uuid": "^11.1.1",
+    "@docusaurus/core/schema-utils/ajv": "^8.18.0",
+    "@docusaurus/core/ajv-formats/ajv": "^8.18.0",
+    "@docusaurus/preset-classic/schema-utils/ajv": "^8.18.0",
+    "@docusaurus/preset-classic/ajv-formats/ajv": "^8.18.0",
+    "@docusaurus/module-type-aliases/schema-utils/ajv": "^8.18.0",
+    "@docusaurus/module-type-aliases/ajv-formats/ajv": "^8.18.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",
