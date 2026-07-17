@@ -27,7 +27,7 @@
     "react-loadable": "^5.5.0",
     "search-insights": "^2.0.0"
   },
-  "resolutions": {    "serialize-javascript": "^7.0.5"  },
+  "resolutions": {    "serialize-javascript": "^7.0.5", "ws": "^8.20.1"  },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",
     "@types/react": "^19.2.2"
