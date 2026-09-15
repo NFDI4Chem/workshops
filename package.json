@@ -36,7 +36,8 @@
     "@docusaurus/preset-classic/schema-utils/ajv": "^8.18.0",
     "@docusaurus/preset-classic/ajv-formats/ajv": "^8.18.0",
     "@docusaurus/module-type-aliases/schema-utils/ajv": "^8.18.0",
-    "@docusaurus/module-type-aliases/ajv-formats/ajv": "^8.18.0"
+    "@docusaurus/module-type-aliases/ajv-formats/ajv": "^8.18.0",
+    "qs": "^6.16.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.2",
